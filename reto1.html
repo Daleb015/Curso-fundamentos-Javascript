@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Ingresa tu nombre </label>
+        <input type="text" name="nombre" id="1">
+        <input type="button" value="Enviar" onclick="ultimas()">
+    </form>
+    <script>
+        function ultimas () {
+            
+            var nombre = document.getElementById('1').value
+            console.log(nombre)
+            var largo = nombre.length
+            console.log(largo)
+            var sub = nombre.substr(largo-2,largo-1)
+            console.log(sub)
+        }
+    </script>
+</body>
+</html>
